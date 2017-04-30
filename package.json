@@ -1,0 +1,26 @@
+{
+  "name": "kisphp-gulp-commander",
+  "version": "0.1.0",
+  "description": "gulp commander",
+  "repository": "https://github.com/kisphp/gulp-commander.git",
+  "main": "src/gulp-commander.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "keywords": [
+    "gulp",
+    "commander",
+    "gulp",
+    "automate",
+    "components"
+  ],
+  "author": "Bogdan Rizac",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
+  }
+}
