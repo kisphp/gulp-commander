@@ -2,6 +2,7 @@
   "name": "kisphp-gulp-commander",
   "version": "0.1.0",
   "description": "gulp commander",
+  "repository": "https://github.com/kisphp/gulp-commander.git",
   "main": "src/gulp-commander.js",
   "scripts": {
     "test": "mocha tests"
