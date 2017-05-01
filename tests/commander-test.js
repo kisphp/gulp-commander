@@ -1,5 +1,6 @@
-let gc = require('../src/gulp-commander');
 'use strict';
+
+let gc = require('../src/gulp-commander');
 
 let chai = require('chai');
 let expect = chai.expect; // we are using the "expect" style of Chai
