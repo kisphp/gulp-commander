@@ -1,10 +1,10 @@
 language: node_js
 node_js:
-  - "6"
   - "7"
-
-before_script:
-  - npm install
+  - "6"
+  - "5"
+  - "4"
+  - "node"
 
 script:
   - npm run test

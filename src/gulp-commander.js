@@ -1,3 +1,5 @@
+'use strict';
+
 let colors = require('colors');
 
 class GulpCommander {
