@@ -18,10 +18,17 @@ describe('GulpCommander', function() {
         expect(gc.getWatch().length).to.equal(1);
     });
 
+    it('addTask should add another element to tasks list and none to watch list', function() {
+        gc.addTask('task-2');
+        expect(gc.getTasks().length).to.equal(2);
+        expect(gc.getWatch().length).to.equal(1);
+    });
+
     it('getList must return one task and one watch', function(){
         let list = gc.getList();
 
         expect(list.tasks[0]).to.equal('task-1');
+        expect(list.tasks[1]).to.equal('task-2');
         expect(list.watch[0]).to.equal('watch-1');
     });
 });
