@@ -20,6 +20,9 @@ let requireDir = require('require-dir');
 
 let GR = require('kisphp-gulp-commander');
 
+// load tasks
+requireDir('./gulp-tasks', { recurse: true });
+
 // run tasks (all chain)
 gulp.task('default', GR.getTasks());
 
@@ -33,7 +36,7 @@ gulp.task('list', () => {
 
 ```
 
-Create `./tasks/scss.js` file and add css related gulp tasks. At the end of the file add:
+Create `./gulp-tasks/scss.js` file and add css related gulp tasks. At the end of the file add:
 
 ```javascript
 
@@ -44,5 +47,6 @@ let GR = require('kisphp-gulp-commander');
 GR.addTask('scss'); // here you register the main scss task
 GR.addWatch('watch:scss'); // here you register the watch task
 ```
+> Do the same for other tasks like: `javascript`, `copy-files`, etc
 
 Now execute `gulp` command and it will run all registered commands
