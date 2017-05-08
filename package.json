@@ -1,6 +1,6 @@
 {
   "name": "kisphp-gulp-commander",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "gulp commander",
   "repository": "https://github.com/kisphp/gulp-commander.git",
   "main": "src/gulp-commander.js",
