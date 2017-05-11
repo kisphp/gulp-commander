@@ -31,4 +31,22 @@ describe('GulpCommander', function() {
         expect(list.tasks[1]).to.equal('task-2');
         expect(list.watch[0]).to.equal('watch-1');
     });
+
+    it('addTask accept arrays too', () => {
+        gc.addTask(['array-1', 'array-2']);
+
+        let list = gc.getList();
+
+        expect(list.tasks[2]).to.equal('array-1');
+        expect(list.tasks[3]).to.equal('array-2');
+    });
+
+    it('addWatch accept arrays too', () => {
+        gc.addWatch(['array-1', 'array-2']);
+
+        let list = gc.getList();
+
+        expect(list.watch[1]).to.equal('array-1');
+        expect(list.watch[2]).to.equal('array-2');
+    });
 });
