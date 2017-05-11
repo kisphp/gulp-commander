@@ -36,6 +36,7 @@ gulp.task('list', () => {
 
 ```
 
+
 Create `./gulp-tasks/scss.js` file and add css related gulp tasks. At the end of the file add:
 
 ```javascript
@@ -48,5 +49,19 @@ GR.addTask('scss'); // here you register the main scss task
 GR.addWatch('watch:scss'); // here you register the watch task
 ```
 > Do the same for other tasks like: `javascript`, `copy-files`, etc
+
+
+If you have multiple tasks you can provide them as an array
+
+```javascript
+GR.addTask([
+    'scss:external',
+    'scss:local'
+]);
+GR.addWatch([
+    'watch:scss:local',
+    'watch:scss:admin'
+]);
+```
 
 Now execute `gulp` command and it will run all registered commands
