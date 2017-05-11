@@ -13,6 +13,13 @@ class GulpCommander {
      * @param {String} taskName
      */
     addTask(taskName) {
+        if (typeof taskName === 'object') {
+            taskName.forEach((task) => {
+                this.addTask(task);
+            });
+
+            return null;
+        }
         this.gulp_tasks.push(taskName);
     }
 
@@ -20,6 +27,13 @@ class GulpCommander {
      * @param {String} watchName
      */
     addWatch(watchName) {
+        if (typeof watchName === 'object') {
+            watchName.forEach((watch) => {
+                this.addWatch(watch);
+            });
+
+            return null;
+        }
         this.gulp_watch.push(watchName);
     }
 
