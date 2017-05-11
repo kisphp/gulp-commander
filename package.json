@@ -14,9 +14,6 @@
     "automate",
     "components"
   ],
-  "engines": {
-    "node": ">=6.0"
-  },
   "author": "Bogdan Rizac",
   "license": "MIT",
   "dependencies": {
